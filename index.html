@@ -1,26 +1,26 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-with, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-with, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		<!-- etiqueta color de la aplicación -->
-		<meta name="theme-color" content="#FB314E">
+		<meta name="theme-color" content="#FB314E" />
 		<!-- Optimizacion para Movil -->
-		<meta name="MobileOptimized" content="Width">
-		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized" content="Width" />
+		<meta name="HandheldFriendly" content="true" />
 		<!-- PWA para apple -->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<link rel="apple-touch-icon" href="img/favicon.png">
-		<link rel="apple-touch-startup-image" href="img/favicon.png">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<link rel="apple-touch-icon" href="img/favicon.png" />
+		<link rel="apple-touch-startup-image" href="img/favicon.png" />
 
 		<!-- Configuracion general PWA -->
-		<link rel="manifest" href="manifest.json">
-		
+		<link rel="manifest" href="manifest.json" />
+
 		<title>Sección Curso PWA</title>
-		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
 		<header id="main-header">
@@ -100,5 +100,16 @@
 		</footer>
 	</body>
 	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script>
+          if('serviceWorker' in navigator){
+
+				navigator.serviceWorker
+				.register('./sw.js')
+				.then(res => console.log('serviceWoker cargado correctamente', res))
+				.catch(err => console.log('no se ha podido registrar serviceWorker', err));
+			}else{
+				console.log('no puedes');
+			}
+        </script>
 	<script src="js/main.js"></script>
 </html>
