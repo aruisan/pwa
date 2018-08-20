@@ -2,7 +2,7 @@
 	"name": "fergon",
 	"short_name": "fergon",
 	"description": "Aplicacion de manejo de dats y seguimientos a sedes e institutos por fergon",
-	"background_color": "#fff",
+	"background_color": "#051993",
 	"theme_color": "#FB314E",
 	"orientation": "portrait",
 	"display": "standalone",
