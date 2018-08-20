@@ -3,7 +3,7 @@
 	"short_name": "fergon",
 	"description": "Aplicacion de manejo de dats y seguimientos a sedes e institutos por fergon",
 	"background_color": "#fff",
-	"themen_color": "#FB314E",
+	"theme_color": "#FB314E",
 	"orientation": "portrait",
 	"display": "standalone",
 	"start_url": "./index.html?utm_source=web_app_manifest",
